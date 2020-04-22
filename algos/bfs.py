@@ -94,8 +94,7 @@ def bfs(source, destination):
     queue.append(source_node)
     #pop from queue and use as current
     while len(queue) > 0:
-        map_output = map(lambda node: node.coordinates, queue)
-        # print(list(map_output))
+        # map(lambda node: node.coordinates, queue)
         current_node = queue.pop(0)
         #if current same as destination append current to path and return
         if current_node.coordinates == destination:
